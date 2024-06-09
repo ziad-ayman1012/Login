@@ -1,0 +1,93 @@
+:root{
+    --bg-main:#24353F;
+}
+:root{
+    --color-font:#17A2B8;
+}
+body{
+    margin: 0;
+    background-color: var(--bg-main);
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.login h1 , .signUp h1{
+    color: var(--color-font);
+    font-weight: 500;
+}
+.login .btn , .signUp .btn{
+    color: var(--color-font);
+    border-color: var(--color-font);
+}
+.login .btn:hover , .signUp .btn:hover{
+    color: white;
+    background-color: var(--color-font);
+}
+.login{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+.form-control{
+    background-color: var(--bg-main) !important;
+    border-color: #ccc;
+    color: white !important;
+    
+    
+}
+
+.form-control::placeholder{
+    color: #ccc;
+}
+.form-control:focus{
+    box-shadow: 0 0 0 0 rgba(13,110,253,.25);
+}
+
+a:hover:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+.signUPContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-main);
+}
+.signUp{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+nav span{
+    cursor: pointer;
+}
+.homePage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--bg-main);
+}
+nav {
+    background-color: var(--bg-main);
+}
+
+nav button{
+    color: #ccc !important;
+}
+.messageContainer{
+    background-color: var(--bg-main);
+}
+.welcomeMessage p{
+    color: var(--color-font);
+}
+.welcomeMessage{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+

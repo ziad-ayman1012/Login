@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container py-5">
+        <div class="login     py-5 mb-5 w-75 mx-auto text-center ">
+            <h1 class="text-info mb-3 display-6 text-center ">Smart Login System</h1>
+            <input oninput="logInValidation(this)"  class="form-control w-75  my-3 mx-auto "  type="email" name="user-mail" id="userMail" placeholder="Enter Your Email">
+            
+            <input oninput="logInValidation(this)" class="form-control w-75  my-3 mx-auto" type="password" name="user-pass" id="userPass" placeholder="Enter Your Password">
+            
+
+            <div class="alert text-danger py-1 d-none ">
+                <small class="fs-5">the account is invalid</small>
+            </div>
+            <div class="alert text-success py-1 d-none">
+                <small class="fs-5">Success</small>
+            </div>
+            <button id="loginBtn" class="btn btn-outline-info w-75  my-3 ">Login</button>
+            <p class="text-white">Don’t have an account?<a href="#" id="signUp" class="position-relative">Sign Up</a></p>
+        </div>
+    </div>
+
+    
+        <div class="signUPContainer py-5 d-none">
+            <div class="signUp text-center py-5 mb-5 w-75 mx-auto text-center">
+                <h1 class="text-info mb-3 display-6 text-center ">Smart Login System</h1>
+                <input oninput="validateInputs(this)" type="text" id="userName" placeholder="Enter Your Name" class="form-control w-75 my-3 mx-auto">
+                <div class="alert text-danger py-1 d-none">
+                    <small class="fs-5">user name is invalid</small>
+                </div>
+                <input oninput="validateInputs(this)"  class="form-control w-75  my-3 mx-auto " type="email" name="user-mail" id="registUserMail"
+                    placeholder="Enter Your Email">
+                    <div class="alert text-danger py-1 d-none">
+                        <small class="fs-5">user email is invalid</small>
+                    </div>
+                <input oninput="validateInputs(this)" class="form-control w-75  my-3 mx-auto" type="password" name="user-pass" id="registUserPass"
+                    placeholder="Enter Password">
+                    <div class="alert text-danger py-1 d-none">
+                        <small class=""> password should be at least 8 characters</small>
+                    </div>
+                    <div class="alert text-success py-1 d-none" id="alertSuccess">
+                        <small class="fs-5">Success</small>
+                    </div>
+                    <div class="alert text-warning py-1 d-none" >
+                        <small class="fs-5">Already Taken</small>
+                    </div>
+                    <div class="alert text-danger py-1 d-none" id="alertInvalid">
+                        <small class="fs-5">Invalid</small>
+                    </div>
+                <button id="signUpBtn" class="btn btn-outline-info w-75  my-3 ">Sign Up</button>
+                <p class="text-white">Don’t have an account?<a href="#" id="signIn" class="position-relative">Sign In</a></p>
+            
+    </div>
+    </div>
+    <div class="homePage d-none">
+        <nav class="navbar shadow py-3">
+            <div class="container">
+                <span class="navbar-brand mb-0 h1 text-white fs-4 ms-5">SMART LOGIN</span>
+                
+                <button id="logoutBtn" class="btn btn-outline-warning py-2 me-5">Logout</button>
+            </div>
+        </nav>
+        <div class="messageContainer d-flex justify-content-center align-items-center vh-100">
+            <div class="welcomeMessage py-4 w-50 text-center">
+                
+            </div>
+        </div>
+        
+    </div>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+</html>
